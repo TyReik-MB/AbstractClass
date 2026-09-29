@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Instructor.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #2aacb8;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Instructor.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Instructor </span><span class="s2">{</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s3">//create two person object</span>
+        <span class="s1">Person p1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Person</span><span class="s2">();</span>
+
+
+        <span class="s3">// Person p2 = new Person (72, 70, &quot;Black&quot;, &quot;Barack Obama&quot;, 170);</span>
+        <span class="s3">// System.out.println(p2.name);</span>
+
+        <span class="s1">Person p2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Person</span><span class="s2">(</span><span class="s4">72</span><span class="s2">, </span><span class="s4">70</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">p2</span><span class="s2">.</span><span class="s1">name</span><span class="s2">);</span>
+
+
+        <span class="s1">Person p3 </span><span class="s2">= </span><span class="s1">p2</span><span class="s2">.</span><span class="s1">Call_Private</span><span class="s2">();</span>
+
+        <span class="s1">student s1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">student</span><span class="s2">();</span>
+        <span class="s1">s1</span><span class="s2">.</span><span class="s1">age </span><span class="s2">= </span><span class="s4">20</span><span class="s2">;</span>
+        <span class="s1">s1</span><span class="s2">.</span><span class="s1">gpa </span><span class="s2">= </span><span class="s4">4.00</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">s1</span><span class="s2">.</span><span class="s1">gpa</span><span class="s2">);</span>
+
+        <span class="s1">instructor i1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">instructor</span><span class="s2">();</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">age </span><span class="s2">= </span><span class="s4">40</span><span class="s2">;</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">height </span><span class="s2">= </span><span class="s4">72</span><span class="s2">;</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">color </span><span class="s2">= </span><span class="s5">&quot;Black&quot;</span><span class="s2">;</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">name </span><span class="s2">= </span><span class="s5">&quot;Mr. Smith&quot;</span><span class="s2">;</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">weight </span><span class="s2">= </span><span class="s4">180</span><span class="s2">;</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">department </span><span class="s2">= </span><span class="s5">&quot;Computer Science&quot;</span><span class="s2">;</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">course </span><span class="s2">= </span><span class="s5">&quot;Java&quot;</span><span class="s2">;</span>
+        <span class="s1">i1</span><span class="s2">.</span><span class="s1">salary </span><span class="s2">= </span><span class="s4">50000</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">age</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">height</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">color</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">name</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">weight</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">department</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">course</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i1</span><span class="s2">.</span><span class="s1">salary</span><span class="s2">);</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+<span class="s0">class </span><span class="s1">instructor </span><span class="s0">extends </span><span class="s1">Person </span><span class="s2">{</span>
+
+    <span class="s1">String department</span><span class="s2">;</span>
+    <span class="s1">String course</span><span class="s2">;</span>
+    <span class="s0">double </span><span class="s1">salary</span><span class="s2">;</span>
+
+<span class="s2">}</span>
+
+</pre>
+</body>
+</html>
